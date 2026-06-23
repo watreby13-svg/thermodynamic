@@ -3,11 +3,11 @@ const PRODUCTS = [{
   id: 'bentobox-classic',
   name: 'Thermodynamic BentoBox',
   tagline: 'Classic',
-  basePrice: 79,
+  basePrice: 49,
   sizes: [
-    { label: 'Standard (1.2L)', price: 79 },
-    { label: 'Large (1.8L)', price: 99 },
-    { label: 'Mini (0.8L)', price: 59 }
+    { label: 'Standard (1.2L)', price: 49 },
+    { label: 'Large (1.8L)', price: 59 },
+    { label: 'Mini (0.8L)', price: 29 }
   ],
   colors: ['#1e293b', '#f97316', '#3b82f6', '#84cc16', '#f9fafb'],
   images: ['🥪', '🍱', '🧊', '🔥', '📐', '🎒', '🏔️', '🧰']
