@@ -14,12 +14,12 @@ const PRODUCTS = [{
 }];
 
 const REVIEWS = [
-  { name: 'Sarah M.', location: 'Auckland', stars: 5, date: '2026-03-12', badge: 'Parent', title: 'Game changer for school lunches', text: 'My daughter loves taking hot pasta and cold fruit together. No more lukewarm lunches! The compartments really work.', hasPhoto: true },
-  { name: 'James T.', location: 'Wellington', stars: 5, date: '2026-02-28', badge: 'Commuter', title: 'Perfect for office lunches', text: 'I prep my lunch the night before — hot curry in one compartment, cold salad in another. Still perfect at midday.', hasPhoto: true },
-  { name: 'Tom H.', location: 'Dunedin', stars: 5, date: '2026-01-20', badge: 'Outdoor', title: 'Road trip essential', text: 'We drove from Dunedin to Nelson and had hot soup and cold drinks. Honestly incredible for a lunchbox.', hasPhoto: true },
-  { name: 'Mike P.', location: 'Tauranga', stars: 4, date: '2026-01-08', badge: 'Commuter', title: 'Solid build, worth the price', text: 'Bit pricey but the build quality is obvious. Stainless feel, strong latch. My leftovers have never been better.', hasPhoto: true },
-  { name: 'Ben C.', location: 'Queenstown', stars: 5, date: '2026-02-22', badge: 'Outdoor', title: 'Took it hiking', text: 'Packed hot bacon rolls and cold grapes for a day on the Routeburn. Everyone else was jealous.', hasPhoto: true },
-  { name: 'Natalie F.', location: 'Wellington', stars: 5, date: '2026-03-28', badge: 'Commuter', title: 'Best lunchbox I\'ve owned', text: 'I\'ve tried so many "insulated" lunchboxes. This one actually delivers. Hot stays hot, cold stays cold.', hasPhoto: true }
+  { name: 'Sarah M.', location: 'Auckland', stars: 5, date: '2026-03-12', badge: 'Parent', title: 'Game changer for school lunches', text: 'My daughter loves taking hot pasta and cold fruit together. No more lukewarm lunches! The compartments really work.' },
+  { name: 'James T.', location: 'Wellington', stars: 5, date: '2026-02-28', badge: 'Commuter', title: 'Perfect for office lunches', text: 'I prep my lunch the night before — hot curry in one compartment, cold salad in another. Still perfect at midday.' },
+  { name: 'Tom H.', location: 'Dunedin', stars: 5, date: '2026-01-20', badge: 'Outdoor', title: 'Road trip essential', text: 'We drove from Dunedin to Nelson and had hot soup and cold drinks. Honestly incredible for a lunchbox.' },
+  { name: 'Mike P.', location: 'Tauranga', stars: 4, date: '2026-01-08', badge: 'Commuter', title: 'Solid build, worth the price', text: 'Bit pricey but the build quality is obvious. Stainless feel, strong latch. My leftovers have never been better.' },
+  { name: 'Ben C.', location: 'Queenstown', stars: 5, date: '2026-02-22', badge: 'Outdoor', title: 'Took it hiking', text: 'Packed hot bacon rolls and cold grapes for a day on the Routeburn. Everyone else was jealous.' },
+  { name: 'Natalie F.', location: 'Wellington', stars: 5, date: '2026-03-28', badge: 'Commuter', title: 'Best lunchbox I\'ve owned', text: 'I\'ve tried so many "insulated" lunchboxes. This one actually delivers. Hot stays hot, cold stays cold.' }
 ];
 
 const FAQS = [
@@ -172,12 +172,9 @@ function renderPDP() {
 function renderReviews() {
   const grid = document.getElementById('reviews-grid');
   if (!grid) return;
-  const reviewImages = ['review_1.png', 'review_2.png', 'review_3.png', 'review_4.png', 'review_5.png', 'review_6.png'];
   let html = '';
-  REVIEWS.forEach((r, i) => {
-    const img = reviewImages[i % reviewImages.length];
+  REVIEWS.forEach((r) => {
     html += `<div class="review-full-card">
-      ${r.hasPhoto ? `<div class="review-photo" style="position:relative;overflow:hidden;background:var(--slate-50);display:flex;align-items:center;justify-content:center"><img src="assets/${img}" alt="Review photo" style="width:70%;object-fit:contain"></div>` : ''}
       <div class="stars">${'★'.repeat(r.stars)}${'☆'.repeat(5 - r.stars)}</div>
       <div class="date">${new Date(r.date).toLocaleDateString('en-NZ', { day: 'numeric', month: 'long', year: 'numeric' })}</div>
       <h4>${r.title}</h4>
