@@ -50,7 +50,7 @@
           <div class="star-rating-summary" style="margin-bottom:0">
             <span class="avg">4.7</span>
             <span class="stars">★★★★★</span>
-            <span class="total">18 reviews</span>
+            <span class="total">6 reviews</span>
           </div>
           <div style="display:flex;gap:1rem;justify-content:center;margin-top:.75rem;font-size:.8125rem;color:var(--slate-500)">
             <span>30-day returns</span>
@@ -122,7 +122,7 @@
           if (filter === 'photo') filtered = REVIEWS.filter(r => r.hasPhoto);
           else if (filter !== 'all') filtered = REVIEWS.filter(r => r.stars === parseInt(filter));
 
-          const reviewImages = ['standard_slate.png', 'standard_orange.png', 'standard_blue.png', 'standard_green.png', 'standard_white.png', 'large_slate.png'];
+          const reviewImages = ['review_1.png', 'review_2.png', 'review_3.png', 'review_4.png', 'review_5.png', 'review_6.png'];
           const grid = document.getElementById('reviews-grid');
           let html = '';
           filtered.forEach((r, i) => {
