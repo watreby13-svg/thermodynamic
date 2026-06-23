@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart – Thermodynamic</title>
+  <meta name="description" content="Review your Thermodynamic order. Free NZ shipping over $79.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/logo.svg">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><img class="logo-icon" src="assets/logo.svg" alt="">Thermodynamic</a>
+      <nav class="nav">
+        <a href="shop.html">Shop</a>
+        <a href="technology.html">Technology</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="support.html">Support</a>
+      </nav>
+      <div class="header-actions">
+        <a href="cart.html" class="cart-btn" aria-label="Cart">🛒<span class="cart-count" style="display:none">0</span></a>
+        <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+      </div>
+    </div>
+    <nav class="mobile-nav">
+      <a href="shop.html">Shop</a>
+      <a href="technology.html">Technology</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="faq.html">FAQ</a>
+      <a href="about.html">About</a>
+      <a href="support.html">Support</a>
+      <a href="cart.html" class="btn btn-primary">View cart 🛒</a>
+    </nav>
+  </header>
+
+  <main class="cart-page">
+    <div class="container">
+      <h1 style="font-size:1.75rem;font-weight:800;margin-bottom:2rem">Shopping cart</h1>
+      <div id="cart-container">
+        <!-- Rendered by JS -->
+      </div>
+      <div style="margin-top:2rem">
+        <a href="shop.html" style="color:var(--orange-500);font-weight:600">← Continue shopping</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><img class="logo-icon" src="assets/logo.svg" alt="">Thermodynamic</a>
+          <p>Independent compartment insulation. Engineered in New Zealand for the way you actually pack lunch.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <a href="shop.html">BentoBox</a>
+          <a href="shop.html">Accessories</a>
+          <a href="shop.html">Gift cards</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="support.html">Contact us</a>
+          <a href="support.html">Shipping & returns</a>
+          <a href="support.html">Care instructions</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="about.html">About us</a>
+          <a href="technology.html">Technology</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="support.html">Privacy policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Thermodynamic. All rights reserved.</span>
+        <span>NZ-made for better lunches</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', renderCartPage);
+  </script>
+</body>
+</html>
