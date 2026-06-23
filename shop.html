@@ -77,14 +77,7 @@
             </div>
           </div>
 
-          <div class="pdp-variants">
-            <label>Colour</label>
-            <div style="display:flex;gap:.625rem" id="color-options">
-              <button class="color-swatch active" data-color="Slate" style="background:#1e293b" aria-label="Slate"></button>
-              <button class="color-swatch" data-color="White" style="background:#f9fafb;border-color:var(--slate-300)" aria-label="White"></button>
-            </div>
-          </div>
-
+          
           <div class="pdp-actions">
             <button class="btn btn-primary" id="add-to-cart-btn">Add to cart</button>
             <button class="btn btn-dark" id="buy-now-btn">Buy now</button>
@@ -360,21 +353,15 @@
   <script src="js/main.js"></script>
   <script>
     let selectedSize = 'Standard (1.2L)';
-    let selectedColor = 'Slate';
     let selectedPrice = 29;
     const sizeMap = {
       'Standard (1.2L)': 'standard',
       'Large (1.8L)': 'large',
       'Mini (0.8L)': 'mini'
     };
-    const colorMap = {
-      'Slate': 'slate', 'White': 'white'
-    };
-
     function updateMainImage() {
       const size = sizeMap[selectedSize] || 'standard';
-      const color = colorMap[selectedColor] || 'slate';
-      document.getElementById('main-gallery-img').src = 'assets/' + size + '_' + color + '.png';
+      document.getElementById('main-gallery-img').src = 'assets/' + size + '_slate.png';
     }
 
     document.querySelectorAll('#size-options button').forEach(btn => {
@@ -388,21 +375,12 @@
       });
     });
 
-    document.querySelectorAll('#color-options .color-swatch').forEach(swatch => {
-      swatch.addEventListener('click', () => {
-        document.querySelectorAll('#color-options .color-swatch').forEach(s => s.classList.remove('active'));
-        swatch.classList.add('active');
-        selectedColor = swatch.dataset.color;
-        updateMainImage();
-      });
-    });
-
     document.getElementById('add-to-cart-btn').addEventListener('click', () => {
-      addToCart('bentobox-classic', selectedSize, selectedColor);
+      addToCart('bentobox-classic', selectedSize, 'Slate');
     });
 
     document.getElementById('buy-now-btn').addEventListener('click', () => {
-      addToCart('bentobox-classic', selectedSize, selectedColor);
+      addToCart('bentobox-classic', selectedSize, 'Slate');
       window.location.href = 'cart.html';
     });
   </script>
