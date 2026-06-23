@@ -43,7 +43,7 @@ ul{list-style:none}
 .header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--slate-200)}
 .header-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
 .logo{font-size:1.25rem;font-weight:800;letter-spacing:-.02em;display:flex;align-items:center;gap:.5rem}
-.logo-icon{width:32px;height:32px;border-radius:8px}
+.logo-icon{height:36px;width:auto;border-radius:6px}
 .nav{display:none}
 .nav a{padding:.5rem 1rem;font-size:.875rem;font-weight:500;color:var(--slate-600);transition:color var(--transition);border-radius:8px}
 .nav a:hover{color:var(--slate-900);background:var(--slate-100)}
