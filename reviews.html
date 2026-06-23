@@ -64,7 +64,6 @@
         <button data-filter="5">★★★★★</button>
         <button data-filter="4">★★★★☆</button>
         <button data-filter="3">★★★☆☆</button>
-        <button data-filter="photo">With photos</button>
       </div>
 
       <div class="reviews-grid" id="reviews-grid">
@@ -119,16 +118,12 @@
           btn.classList.add('active');
           const filter = btn.dataset.filter;
           let filtered = [...REVIEWS];
-          if (filter === 'photo') filtered = REVIEWS.filter(r => r.hasPhoto);
-          else if (filter !== 'all') filtered = REVIEWS.filter(r => r.stars === parseInt(filter));
+          if (filter !== 'all') filtered = REVIEWS.filter(r => r.stars === parseInt(filter));
 
-          const reviewImages = ['review_1.png', 'review_2.png', 'review_3.png', 'review_4.png', 'review_5.png', 'review_6.png'];
           const grid = document.getElementById('reviews-grid');
           let html = '';
-          filtered.forEach((r, i) => {
-            const img = reviewImages[i % reviewImages.length];
+          filtered.forEach((r) => {
             html += `<div class="review-full-card">
-              ${r.hasPhoto ? `<div class="review-photo" style="position:relative;overflow:hidden;background:var(--slate-50);display:flex;align-items:center;justify-content:center"><img src="assets/${img}" alt="Review photo" style="width:70%;object-fit:contain"></div>` : ''}
               <div class="stars">${'★'.repeat(r.stars)}${'☆'.repeat(5 - r.stars)}</div>
               <div class="date">${new Date(r.date).toLocaleDateString('en-NZ', { day: 'numeric', month: 'long', year: 'numeric' })}</div>
               <h4>${r.title}</h4>
