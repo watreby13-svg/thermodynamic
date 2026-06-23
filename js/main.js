@@ -16,22 +16,10 @@ const PRODUCTS = [{
 const REVIEWS = [
   { name: 'Sarah M.', location: 'Auckland', stars: 5, date: '2026-03-12', badge: 'Parent', title: 'Game changer for school lunches', text: 'My daughter loves taking hot pasta and cold fruit together. No more lukewarm lunches! The compartments really work.', hasPhoto: true },
   { name: 'James T.', location: 'Wellington', stars: 5, date: '2026-02-28', badge: 'Commuter', title: 'Perfect for office lunches', text: 'I prep my lunch the night before — hot curry in one compartment, cold salad in another. Still perfect at midday.', hasPhoto: true },
-  { name: 'Lisa W.', location: 'Christchurch', stars: 4, date: '2026-03-05', badge: 'Parent', title: 'Great concept, works well', text: 'Took it for a beach day. Mince pies stayed hot, ice blocks stayed frozen. Impressed with the insulation.', hasPhoto: false },
   { name: 'Tom H.', location: 'Dunedin', stars: 5, date: '2026-01-20', badge: 'Outdoor', title: 'Road trip essential', text: 'We drove from Dunedin to Nelson and had hot soup and cold drinks. Honestly incredible for a lunchbox.', hasPhoto: true },
-  { name: 'Emma R.', location: 'Hamilton', stars: 5, date: '2026-02-14', badge: 'Parent', title: 'No more soggy sandwiches', text: 'Finally a lunchbox that keeps everything in its place — temperature-wise and physically. Easy to clean too.', hasPhoto: false },
   { name: 'Mike P.', location: 'Tauranga', stars: 4, date: '2026-01-08', badge: 'Commuter', title: 'Solid build, worth the price', text: 'Bit pricey but the build quality is obvious. Stainless feel, strong latch. My leftovers have never been better.', hasPhoto: true },
-  { name: 'Rachel K.', location: 'Auckland', stars: 5, date: '2026-03-18', badge: 'Parent', title: 'We bought three for the family', text: 'One for each kid and one for us. No more fighting over who gets the hot lunch. Best school purchase this year.', hasPhoto: false },
   { name: 'Ben C.', location: 'Queenstown', stars: 5, date: '2026-02-22', badge: 'Outdoor', title: 'Took it hiking', text: 'Packed hot bacon rolls and cold grapes for a day on the Routeburn. Everyone else was jealous.', hasPhoto: true },
-  { name: 'Priya S.', location: 'Wellington', stars: 4, date: '2026-03-01', badge: 'Commuter', title: 'Meal prep dream', text: 'I batch cook on Sundays and portion into compartments. Grab and go all week. Works brilliantly.', hasPhoto: false },
-  { name: 'Dan L.', location: 'Napier', stars: 5, date: '2026-01-30', badge: 'Parent', title: 'Mince pie + ice cream = genius', text: 'Saw the ad and had to try it. Packed a hot mince pie and ice cream for lunch. Both perfect. Magic.', hasPhoto: true },
-  { name: 'Olivia B.', location: 'Christchurch', stars: 4, date: '2026-02-05', badge: 'Commuter', title: 'Good for portion control', text: 'The compartments naturally portion my meals. I\'m eating better and my lunches taste better. Win-win.', hasPhoto: false },
-  { name: 'Steve J.', location: 'Auckland', stars: 5, date: '2026-03-22', badge: 'Outdoor', title: 'Beach day hero', text: 'Kept our lunch cold for 6 hours in the sun. No leaks, no mess. Threw it in the bag and off we went.', hasPhoto: true },
-  { name: 'Kate W.', location: 'Hamilton', stars: 3, date: '2026-01-15', badge: 'Parent', title: 'Good but heavy', text: 'Works as advertised but it\'s heavier than a regular lunchbox. Fine for older kids, maybe too heavy for tiny ones.', hasPhoto: false },
-  { name: 'Alex N.', location: 'Dunedin', stars: 5, date: '2026-02-18', badge: 'Commuter', title: 'No more microwave queue', text: 'I eat hot lunch without queuing for the microwave. Coworkers keep asking where I got it.', hasPhoto: true },
-  { name: 'Maya T.', location: 'Auckland', stars: 5, date: '2026-03-10', badge: 'Parent', title: 'Pickiest eater approved', text: 'My 7-year-old actually eats all his lunch now because the food is actually the right temperature. Worth every cent.', hasPhoto: true },
-  { name: 'Craig D.', location: 'Tauranga', stars: 4, date: '2026-02-08', badge: 'Outdoor', title: 'Good for fishing trips', text: 'Takes a beating in my fishing bag. Keeps bait cold and lunch hot. Rugged little box.', hasPhoto: false },
-  { name: 'Natalie F.', location: 'Wellington', stars: 5, date: '2026-03-28', badge: 'Commuter', title: 'Best lunchbox I\'ve owned', text: 'I\'ve tried so many "insulated" lunchboxes. This one actually delivers. Hot stays hot, cold stays cold.', hasPhoto: true },
-  { name: 'Hemi R.', location: 'Rotorua', stars: 5, date: '2026-01-25', badge: 'Outdoor', title: 'Thermal springs test', text: 'Left it in the car on a hot Rotorua day. Contents were still perfectly separated temp-wise. Amazing.', hasPhoto: false }
+  { name: 'Natalie F.', location: 'Wellington', stars: 5, date: '2026-03-28', badge: 'Commuter', title: 'Best lunchbox I\'ve owned', text: 'I\'ve tried so many "insulated" lunchboxes. This one actually delivers. Hot stays hot, cold stays cold.', hasPhoto: true }
 ];
 
 const FAQS = [
@@ -184,7 +172,7 @@ function renderPDP() {
 function renderReviews() {
   const grid = document.getElementById('reviews-grid');
   if (!grid) return;
-  const reviewImages = ['standard_slate.png', 'standard_orange.png', 'standard_blue.png', 'standard_green.png', 'standard_white.png', 'large_slate.png'];
+  const reviewImages = ['review_1.png', 'review_2.png', 'review_3.png', 'review_4.png', 'review_5.png', 'review_6.png'];
   let html = '';
   REVIEWS.forEach((r, i) => {
     const img = reviewImages[i % reviewImages.length];
