@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout – Thermodynamic</title>
+  <meta name="description" content="Complete your Thermodynamic order.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/logo.svg">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><img class="logo-icon" src="assets/logo.svg" alt="">Thermodynamic</a>
+      <nav class="nav">
+        <a href="shop.html">Shop</a>
+        <a href="technology.html">Technology</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="support.html">Support</a>
+      </nav>
+      <div class="header-actions">
+        <a href="cart.html" class="cart-btn" aria-label="Cart">🛒<span class="cart-count" style="display:none">0</span></a>
+        <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+      </div>
+    </div>
+    <nav class="mobile-nav">
+      <a href="shop.html">Shop</a>
+      <a href="technology.html">Technology</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="faq.html">FAQ</a>
+      <a href="about.html">About</a>
+      <a href="support.html">Support</a>
+      <a href="cart.html" class="btn btn-primary">View cart 🛒</a>
+    </nav>
+  </header>
+
+  <main style="padding:2rem 0 4rem">
+    <div class="container">
+      <h1 style="font-size:1.75rem;font-weight:800;margin-bottom:2rem">Checkout</h1>
+
+      <div id="checkout-summary"></div>
+
+      <form id="checkout-form" class="checkout-form">
+        <h2>Contact</h2>
+        <div class="form-group">
+          <label for="ce-email">Email</label>
+          <input type="email" id="ce-email" required placeholder="you@example.com">
+        </div>
+
+        <h2 style="margin-top:2rem">Delivery</h2>
+        <div class="form-group">
+          <label for="ce-name">Full name</label>
+          <input type="text" id="ce-name" required placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label for="ce-address">Address</label>
+          <input type="text" id="ce-address" required placeholder="Street address">
+        </div>
+        <div class="form-group">
+          <label for="ce-city">City</label>
+          <input type="text" id="ce-city" required placeholder="City">
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+          <div class="form-group">
+            <label for="ce-region">Region</label>
+            <input type="text" id="ce-region" placeholder="e.g. Auckland">
+          </div>
+          <div class="form-group">
+            <label for="ce-postcode">Postcode</label>
+            <input type="text" id="ce-postcode" placeholder="e.g. 1010">
+          </div>
+        </div>
+
+        <h2 style="margin-top:2rem">Payment</h2>
+        <p style="font-size:.875rem;color:var(--slate-500);margin-bottom:1rem">This is a prototype — no real payment will be taken.</p>
+        <div class="form-group">
+          <label for="ce-card">Card number</label>
+          <input type="text" id="ce-card" placeholder="4242 4242 4242 4242">
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+          <div class="form-group">
+            <label for="ce-expiry">Expiry</label>
+            <input type="text" id="ce-expiry" placeholder="MM/YY">
+          </div>
+          <div class="form-group">
+            <label for="ce-cvc">CVC</label>
+            <input type="text" id="ce-cvc" placeholder="123">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%;margin-top:1.5rem;padding:1rem;font-size:1.0625rem">
+          Place order — $0.00 (prototype)
+        </button>
+        <p style="text-align:center;font-size:.8125rem;color:var(--slate-400);margin-top:.75rem">No real payment processed. This is a prototype checkout flow.</p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><img class="logo-icon" src="assets/logo.svg" alt="">Thermodynamic</a>
+          <p>Independent compartment insulation. Engineered in New Zealand for the way you actually pack lunch.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <a href="shop.html">BentoBox</a>
+          <a href="shop.html">Accessories</a>
+          <a href="shop.html">Gift cards</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="support.html">Contact us</a>
+          <a href="support.html">Shipping & returns</a>
+          <a href="support.html">Care instructions</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="about.html">About us</a>
+          <a href="technology.html">Technology</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="support.html">Privacy policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Thermodynamic. All rights reserved.</span>
+        <span>NZ-made for better lunches</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', renderCheckout);
+  </script>
+</body>
+</html>
