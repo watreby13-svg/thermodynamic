@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ – Thermodynamic</title>
+  <meta name="description" content="Frequently asked questions about Thermodynamic lunchboxes. Hot and cold compartments, materials, care, shipping, and warranty.">
+  <meta property="og:title" content="FAQ – Thermodynamic Lunchboxes">
+  <meta property="og:description" content="Answers to common questions about independent compartment insulation, care, and shipping.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/logo.svg">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><img class="logo-icon" src="assets/logo.svg" alt="">Thermodynamic</a>
+      <nav class="nav">
+        <a href="shop.html">Shop</a>
+        <a href="technology.html">Technology</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="support.html">Support</a>
+      </nav>
+      <div class="header-actions">
+        <a href="cart.html" class="cart-btn" aria-label="Cart">🛒<span class="cart-count" style="display:none">0</span></a>
+        <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+      </div>
+    </div>
+    <nav class="mobile-nav">
+      <a href="shop.html">Shop</a>
+      <a href="technology.html">Technology</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="faq.html">FAQ</a>
+      <a href="about.html">About</a>
+      <a href="support.html">Support</a>
+      <a href="cart.html" class="btn btn-primary">View cart 🛒</a>
+    </nav>
+  </header>
+
+  <main style="padding:2rem 0 4rem">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:3rem">
+        <span class="section-label">FAQ</span>
+        <h1 class="section-title">Frequently asked questions</h1>
+        <p class="section-subtitle" style="margin:0 auto">Everything you need to know about Thermodynamic lunchboxes.</p>
+      </div>
+
+      <div class="faq-list" id="faq-list">
+        <!-- Rendered by JS -->
+      </div>
+
+      <div style="text-align:center;margin-top:3rem;padding:2rem;background:var(--slate-50);border-radius:var(--radius)">
+        <h3 style="margin-bottom:.5rem">Still have questions?</h3>
+        <p style="color:var(--slate-500);margin-bottom:1.5rem">We're here to help. Get in touch and we'll get back to you within 24 hours.</p>
+        <a href="support.html" class="btn btn-primary">Contact us</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><img class="logo-icon" src="assets/logo.svg" alt="">Thermodynamic</a>
+          <p>Independent compartment insulation. Engineered in New Zealand for the way you actually pack lunch.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <a href="shop.html">BentoBox</a>
+          <a href="shop.html">Accessories</a>
+          <a href="shop.html">Gift cards</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="support.html">Contact us</a>
+          <a href="support.html">Shipping & returns</a>
+          <a href="support.html">Care instructions</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="about.html">About us</a>
+          <a href="technology.html">Technology</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="support.html">Privacy policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Thermodynamic. All rights reserved.</span>
+        <span>NZ-made for better lunches</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const list = document.getElementById('faq-list');
+      if (list) {
+        list.innerHTML = FAQS.map(f => `
+          <div class="faq-item">
+            <button class="faq-question">${f.q}<span class="icon">+</span></button>
+            <div class="faq-answer">${f.a}</div>
+          </div>
+        `).join('');
+      }
+    });
+  </script>
+</body>
+</html>
