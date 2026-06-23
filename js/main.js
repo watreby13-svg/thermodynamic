@@ -9,7 +9,7 @@ const PRODUCTS = [{
     { label: 'Large (1.8L)', price: 59 },
     { label: 'Mini (0.8L)', price: 29 }
   ],
-  colors: ['#1e293b', '#f97316', '#3b82f6', '#84cc16', '#f9fafb'],
+  colors: ['#1e293b', '#f9fafb'],
   images: ['🥪', '🍱', '🧊', '🔥', '📐', '🎒', '🏔️', '🧰']
 }];
 
