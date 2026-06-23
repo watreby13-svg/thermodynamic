@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thermodynamic BentoBox – Shop | Thermodynamic</title>
+  <meta name="description" content="The Thermodynamic BentoBox with independent insulated compartments. Available in 3 sizes and 5 colours. Free NZ shipping over $79.">
+  <meta property="og:title" content="Thermodynamic BentoBox – Independent hot & cold compartments">
+  <meta property="og:description" content="Pack hot and cold together. Free NZ shipping over $79.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/logo.svg">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><img class="logo-icon" src="assets/logo.svg" alt="">Thermodynamic</a>
+      <nav class="nav">
+        <a href="shop.html">Shop</a>
+        <a href="technology.html">Technology</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="support.html">Support</a>
+      </nav>
+      <div class="header-actions">
+        <a href="cart.html" class="cart-btn" aria-label="Cart">🛒<span class="cart-count" style="display:none">0</span></a>
+        <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+      </div>
+    </div>
+    <nav class="mobile-nav">
+      <a href="shop.html">Shop</a>
+      <a href="technology.html">Technology</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="faq.html">FAQ</a>
+      <a href="about.html">About</a>
+      <a href="support.html">Support</a>
+      <a href="cart.html" class="btn btn-primary">View cart 🛒</a>
+    </nav>
+  </header>
+
+  <main style="padding:2rem 0 4rem">
+    <div class="container">
+      <!-- Breadcrumb -->
+      <div style="font-size:.8125rem;color:var(--slate-400);margin-bottom:2rem">
+        <a href="index.html" style="color:var(--slate-400)">Home</a> / <a href="shop.html" style="color:var(--slate-400)">Shop</a> / <span style="color:var(--slate-600)">BentoBox</span>
+      </div>
+
+      <div class="grid-2" style="align-items:start;gap:2rem">
+        <!-- Gallery -->
+        <div>
+          <div class="pdp-gallery" style="grid-template-columns:1fr">
+            <div class="pdp-gallery-main" style="position:relative;overflow:hidden;background:var(--slate-100)">
+              <img src="assets/standard_slate.png" alt="Thermodynamic BentoBox" id="main-gallery-img" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:2rem">
+            </div>
+            <div class="pdp-gallery-thumbs"></div>
+          </div>
+        </div>
+
+        <!-- Product Info -->
+        <div class="pdp-info">
+          <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem">
+            <span style="font-size:.75rem;font-weight:600;color:var(--orange-500);background:var(--orange-50);padding:.25rem .75rem;border-radius:9999px">New</span>
+            <span style="font-size:.75rem;color:var(--slate-400)">|</span>
+            <span style="font-size:.75rem;color:var(--slate-400)">SKU: TB-001</span>
+          </div>
+          <h1>Thermodynamic BentoBox</h1>
+          <p style="color:var(--slate-500);margin-bottom:1rem">Independent compartment insulation · 3 compartments · BPA-free</p>
+
+          <div class="pdp-price" id="pdp-price">$49 NZD</div>
+
+          <div class="pdp-variants">
+            <label for="size-select">Size</label>
+            <div class="option-group" id="size-options">
+              <button class="active" data-size="Standard (1.2L)" data-price="49">Standard (1.2L)</button>
+              <button data-size="Large (1.8L)" data-price="99">Large (1.8L)</button>
+              <button data-size="Mini (0.8L)" data-price="59">Mini (0.8L)</button>
+            </div>
+          </div>
+
+          <div class="pdp-variants">
+            <label>Colour</label>
+            <div style="display:flex;gap:.625rem" id="color-options">
+              <button class="color-swatch active" data-color="Slate" style="background:#1e293b" aria-label="Slate"></button>
+              <button class="color-swatch" data-color="Orange" style="background:#f97316" aria-label="Orange"></button>
+              <button class="color-swatch" data-color="Blue" style="background:#3b82f6" aria-label="Blue"></button>
+              <button class="color-swatch" data-color="Green" style="background:#84cc16" aria-label="Green"></button>
+              <button class="color-swatch" data-color="White" style="background:#f9fafb;border-color:var(--slate-300)" aria-label="White"></button>
+            </div>
+          </div>
+
+          <div class="pdp-actions">
+            <button class="btn btn-primary" id="add-to-cart-btn">Add to cart</button>
+            <button class="btn btn-dark" id="buy-now-btn">Buy now</button>
+          </div>
+
+          <div class="pdp-meta">
+            <span>In stock</span>
+            <span>Free NZ shipping over $79</span>
+            <span>30-day returns</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Temperature proof -->
+      <section class="pdp-section">
+        <div class="text-center" style="margin-bottom:2rem">
+          <h2>Temperature performance</h2>
+          <p style="margin:0 auto">Independent insulation keeps each compartment at its own temperature.</p>
+        </div>
+        <div class="specs-grid">
+          <div class="spec-card">
+            <div class="icon" style="background:var(--orange-100);color:var(--orange-600);font-size:1rem;font-weight:700">H</div>
+            <div class="value">Up to 4 hrs</div>
+            <div class="label">Hot (above 50°C)</div>
+            <div class="note">Starting temp dependent</div>
+          </div>
+          <div class="spec-card">
+            <div class="icon" style="background:var(--blue-100);color:var(--blue-600);font-size:1rem;font-weight:700">C</div>
+            <div class="value">Up to 6 hrs</div>
+            <div class="label">Cold (below 5°C)</div>
+            <div class="note">Starting temp dependent</div>
+          </div>
+          <div class="spec-card">
+            <div class="icon" style="background:var(--slate-100);color:var(--slate-500);font-size:1rem;font-weight:700">—</div>
+            <div class="value">Minimal transfer</div>
+            <div class="label">Between compartments</div>
+            <div class="note">Thermal barrier technology</div>
+          </div>
+          <div class="spec-card">
+            <div class="icon" style="background:var(--slate-100);color:var(--slate-500);font-size:1rem;font-weight:700">↔</div>
+            <div class="value">Wide range</div>
+            <div class="label">-10°C to 90°C</div>
+            <div class="note">Per compartment tolerance</div>
+          </div>
+        </div>
+        <p style="text-align:center;font-size:.8125rem;color:var(--slate-400);margin-top:1rem">Performance depends on starting temperature, ambient conditions, and how often the box is opened.</p>
+      </section>
+
+      <!-- Compartment system -->
+      <section class="pdp-section">
+        <div class="grid-2" style="align-items:center">
+          <div>
+            <h2>Three compartments. Independent temperatures.</h2>
+            <p style="margin-bottom:1.5rem">Each compartment is separated by a thermal insulation barrier. Hot on one side, cold on the other — and everything in between stays exactly as packed.</p>
+            <ul class="icon-list">
+              <li><span class="li-icon orange" style="font-size:.75rem;font-weight:700">H</span><div><strong>Hot compartment</strong><br><span style="font-size:.875rem;color:var(--slate-500)">Main compartment for hot meals, soups, pasta</span></div></li>
+              <li><span class="li-icon blue" style="font-size:.75rem;font-weight:700">C</span><div><strong>Cold compartment</strong><br><span style="font-size:.875rem;color:var(--slate-500)">Fresh compartment for salads, fruit, yoghurt</span></div></li>
+              <li><span class="li-icon" style="background:var(--slate-100);color:var(--slate-500);font-size:.75rem;font-weight:700">A</span><div><strong>Ambient/snack compartment</strong><br><span style="font-size:.875rem;color:var(--slate-500)">Room-temp snacks, crackers, treats</span></div></li>
+            </ul>
+          </div>
+          <div class="compartment-diagram" style="margin:0">
+            <div class="compartment hot">H<br>Hot</div>
+            <div class="compartment ambient">A<br>Ambient</div>
+            <div class="compartment cold">C<br>Cold</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Use cases -->
+      <section class="pdp-section">
+        <h2 class="text-center">Made for how you lunch</h2>
+        <div class="grid-3 mt-2">
+          <div class="benefit-card" style="padding:0;overflow:hidden">
+            <div style="aspect-ratio:16/9;background:var(--slate-50);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center">
+              <img src="assets/standard_green.png" alt="School lunch" style="width:60%;object-fit:contain">
+            </div>
+            <div style="padding:1.5rem">
+              <h3>School lunch</h3>
+              <p>Hot pasta + cold fruit + crackers. Kids actually eat lunch when it's the right temperature.</p>
+            </div>
+          </div>
+          <div class="benefit-card" style="padding:0;overflow:hidden">
+            <div style="aspect-ratio:16/9;background:var(--slate-50);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center">
+              <img src="assets/standard_white.png" alt="Work lunch" style="width:60%;object-fit:contain">
+            </div>
+            <div style="padding:1.5rem">
+              <h3>Work lunch</h3>
+              <p>Leftover curry (hot) + fresh salad (cold). No microwave queue. No sad sandwiches.</p>
+            </div>
+          </div>
+          <div class="benefit-card" style="padding:0;overflow:hidden">
+            <div style="aspect-ratio:16/9;background:var(--slate-50);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center">
+              <img src="assets/standard_orange.png" alt="Road trip snacks" style="width:60%;object-fit:contain">
+            </div>
+            <div style="padding:1.5rem">
+              <h3>Road trip snacks</h3>
+              <p>Hot pies + cold drinks + snacks. Everything at the temperature you packed it for.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Materials -->
+      <section class="pdp-section">
+        <div class="grid-2" style="align-items:center">
+          <div>
+            <h2>Materials & safety</h2>
+            <ul class="icon-list">
+              <li><span class="li-icon orange">✓</span><div><strong>BPA-free</strong><br><span style="font-size:.875rem;color:var(--slate-500)">All materials food-safe and BPA-free</span></div></li>
+              <li><span class="li-icon blue">✓</span><div><strong>Food-grade stainless steel</strong><br><span style="font-size:.875rem;color:var(--slate-500)">Inner compartments are stainless steel</span></div></li>
+              <li><span class="li-icon orange">✓</span><div><strong>Dishwasher safe</strong><br><span style="font-size:.875rem;color:var(--slate-500)">Compartments and lid — top rack</span></div></li>
+              <li><span class="li-icon blue">✓</span><div><strong>Silicone gaskets</strong><br><span style="font-size:.875rem;color:var(--slate-500)">Leak-resistant, removable for cleaning</span></div></li>
+            </ul>
+          </div>
+          <div style="background:var(--slate-50);border-radius:var(--radius);padding:2rem;text-align:center">
+            <div style="font-size:2.5rem;font-weight:200;color:var(--slate-300);margin-bottom:1rem">W</div>
+            <h3 style="margin-bottom:.5rem">1-year warranty</h3>
+            <p style="font-size:.875rem;color:var(--slate-500)">Covered against manufacturing defects. 30-day satisfaction guarantee.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- What's in the box -->
+      <section class="pdp-section">
+        <h2>What's in the box</h2>
+        <div class="grid-3 mt-1">
+          <div class="benefit-card" style="text-align:center">
+            <div style="font-size:2rem;font-weight:200;color:var(--slate-300);margin-bottom:.75rem">B</div>
+            <h3>Lunchbox body</h3>
+            <p style="font-size:.875rem">Insulated outer shell with 3 compartments</p>
+          </div>
+          <div class="benefit-card" style="text-align:center">
+            <div style="font-size:2rem;font-weight:200;color:var(--slate-300);margin-bottom:.75rem">L</div>
+            <h3>Sealing lid</h3>
+            <p style="font-size:.875rem">Individual compartment seals + carry latch</p>
+          </div>
+          <div class="benefit-card" style="text-align:center">
+            <div style="font-size:2rem;font-weight:200;color:var(--slate-300);margin-bottom:.75rem">U</div>
+            <h3>Utensil set</h3>
+            <p style="font-size:.875rem">Bamboo fork + spoon (optional add-on)</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews -->
+      <section class="pdp-section">
+        <h2>Customer reviews</h2>
+        <div class="star-rating-summary">
+          <span class="avg">4.7</span>
+          <span class="stars">★★★★★</span>
+          <span class="total">18 reviews</span>
+        </div>
+        <div class="review-highlights">
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"Game changer for school lunches. My daughter loves taking hot pasta and cold fruit together."</blockquote>
+            <div class="author">– Sarah M., Auckland</div>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"Packed hot bacon rolls and cold grapes for a day on the Routeburn. Everyone else was jealous."</blockquote>
+            <div class="author">– Ben C., Queenstown</div>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"No more microwave queue. Coworkers keep asking where I got it."</blockquote>
+            <div class="author">– Alex N., Dunedin</div>
+          </div>
+        </div>
+        <div class="text-center mt-2">
+          <a href="reviews.html" class="btn btn-outline">Read all 18 reviews →</a>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="pdp-section">
+        <h2>FAQs</h2>
+        <div class="faq-list" style="max-width:100%">
+          <div class="faq-item">
+            <button class="faq-question">Can it really keep hot and cold at the same time?<span class="icon">+</span></button>
+            <div class="faq-answer">Yes. Each compartment is independently insulated with thermal barriers that prevent heat transfer between compartments.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Is it leak-proof?<span class="icon">+</span></button>
+            <div class="faq-answer">Yes. Silicone gaskets seal each compartment individually. Designed for typical lunch foods.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">How long does it keep food hot/cold?<span class="icon">+</span></button>
+            <div class="faq-answer">Hot: up to 4 hours above 50°C. Cold: up to 6 hours below 5°C. Performance depends on conditions.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Shipping in New Zealand?<span class="icon">+</span></button>
+            <div class="faq-answer">Free standard shipping on orders over $79 NZD. Rural delivery $5. Typical delivery 2–5 business days.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cross-sell -->
+      <section class="pdp-section">
+        <h2>Complete your kit</h2>
+        <div class="grid-3 mt-1">
+          <div class="product-card" style="cursor:default">
+            <div class="product-card-image" style="background:var(--slate-50);display:flex;align-items:center;justify-content:center">
+              <span style="font-size:3rem;font-weight:200;color:var(--slate-300)">❄</span>
+            </div>
+            <div class="product-card-body">
+              <h3>Ice pack (set of 2)</h3>
+              <span class="price">$12 NZD</span>
+              <p class="desc">Reusable gel packs, fits any compartment</p>
+            </div>
+          </div>
+          <div class="product-card" style="cursor:default">
+            <div class="product-card-image" style="background:var(--slate-50);display:flex;align-items:center;justify-content:center">
+              <span style="font-size:3rem;font-weight:200;color:var(--slate-300)">⊞</span>
+            </div>
+            <div class="product-card-body">
+              <h3>Insulated carry sleeve</h3>
+              <span class="price">$19 NZD</span>
+              <p class="desc">Neoprene sleeve, extra insulation + carry handle</p>
+            </div>
+          </div>
+          <div class="product-card" style="cursor:default">
+            <div class="product-card-image" style="background:var(--slate-50);display:flex;align-items:center;justify-content:center">
+              <span style="font-size:3rem;font-weight:200;color:var(--slate-300)">⊡</span>
+            </div>
+            <div class="product-card-body">
+              <h3>Bamboo utensil set</h3>
+              <span class="price">$9 NZD</span>
+              <p class="desc">Fork + spoon + chopsticks, reusable pouch</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><img class="logo-icon" src="assets/logo.svg" alt="">Thermodynamic</a>
+          <p>Independent compartment insulation. Engineered in New Zealand for the way you actually pack lunch.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <a href="shop.html">BentoBox</a>
+          <a href="shop.html">Accessories</a>
+          <a href="shop.html">Gift cards</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="support.html">Contact us</a>
+          <a href="support.html">Shipping & returns</a>
+          <a href="support.html">Care instructions</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="about.html">About us</a>
+          <a href="technology.html">Technology</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="support.html">Privacy policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Thermodynamic. All rights reserved.</span>
+        <span>NZ-made for better lunches</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    let selectedSize = 'Standard (1.2L)';
+    let selectedColor = 'Slate';
+    let selectedPrice = 49;
+    const sizeMap = {
+      'Standard (1.2L)': 'standard',
+      'Large (1.8L)': 'large',
+      'Mini (0.8L)': 'mini'
+    };
+    const colorMap = {
+      'Slate': 'slate', 'Orange': 'orange', 'Blue': 'blue',
+      'Green': 'green', 'White': 'white'
+    };
+
+    function updateMainImage() {
+      const size = sizeMap[selectedSize] || 'standard';
+      const color = colorMap[selectedColor] || 'slate';
+      document.getElementById('main-gallery-img').src = 'assets/' + size + '_' + color + '.png';
+    }
+
+    document.querySelectorAll('#size-options button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#size-options button').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        selectedSize = btn.dataset.size;
+        selectedPrice = parseInt(btn.dataset.price);
+        document.getElementById('pdp-price').textContent = '$' + selectedPrice + ' NZD';
+        updateMainImage();
+      });
+    });
+
+    document.querySelectorAll('#color-options .color-swatch').forEach(swatch => {
+      swatch.addEventListener('click', () => {
+        document.querySelectorAll('#color-options .color-swatch').forEach(s => s.classList.remove('active'));
+        swatch.classList.add('active');
+        selectedColor = swatch.dataset.color;
+        updateMainImage();
+      });
+    });
+
+    document.getElementById('add-to-cart-btn').addEventListener('click', () => {
+      addToCart('bentobox-classic', selectedSize, selectedColor);
+    });
+
+    document.getElementById('buy-now-btn').addEventListener('click', () => {
+      addToCart('bentobox-classic', selectedSize, selectedColor);
+      window.location.href = 'cart.html';
+    });
+  </script>
+</body>
+</html>
