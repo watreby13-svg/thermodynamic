@@ -1,7 +1,7 @@
 // Seed data
 const PRODUCTS = [{
-  id: 'bentobox-classic',
-  name: 'Thermodynamic BentoBox',
+  id: 'lunchbox-classic',
+  name: 'Thermodynamic Lunchbox',
   tagline: 'Classic',
   basePrice: 29,
   sizes: [
@@ -200,7 +200,7 @@ function renderCheckout() {
     const price = getPrice(item.size);
     const lineTotal = price * item.qty;
     subtotal += lineTotal;
-    html += `<div class="item"><span>${item.qty}× Thermodynamic BentoBox (${item.size})</span><span>$${lineTotal}</span></div>`;
+    html += `<div class="item"><span>${item.qty}× Thermodynamic Lunchbox (${item.size})</span><span>$${lineTotal}</span></div>`;
   });
   const shipping = subtotal >= 79 ? 0 : 9;
   const total = subtotal + shipping;
