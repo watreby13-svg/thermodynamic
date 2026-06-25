@@ -23,6 +23,7 @@ const REVIEWS = [
 ];
 
 const FAQS = [
+  { q: 'How big is it? Will it fit in a school bag?', a: 'The Mini (16×12×7 cm) fits easily in most standard school bags and lunchboxes. The Standard (20×15×8 cm) fits larger backpacks. Even the Large (24×17×9 cm) fits typical high school bags. All sizes are designed to be slim enough for a child\'s backpack without bulging.' },
   { q: 'Can it really keep hot and cold at the same time?', a: 'Yes. Each compartment is independently insulated with a thermal barrier between them. Heat transfer between compartments is minimised, so you can pack hot and cold food together without compromise.' },
   { q: 'Will flavours or smells transfer between compartments?', a: 'No. Each compartment is sealed independently with food-grade silicone gaskets. Strong smells like curry or fish won\'t leak into adjacent compartments.' },
   { q: 'Is it leak-proof?', a: 'Yes. The lid seals each compartment individually with silicone gaskets. It\'s designed to be leak-resistant for typical lunch foods. Very liquid contents (like soup) should be packed with care.' },
