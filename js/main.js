@@ -3,11 +3,11 @@ const PRODUCTS = [{
   id: 'lunchbox-classic',
   name: 'Thermodynamic Lunchbox',
   tagline: 'Classic',
-  basePrice: 29,
+  basePrice: 69,
   sizes: [
-    { label: 'Standard (1.2L)', price: 29 },
-    { label: 'Large (1.8L)', price: 39 },
-    { label: 'Mini (0.8L)', price: 19 }
+    { label: 'Standard (1.2L)', price: 69 },
+    { label: 'Large (1.8L)', price: 79 },
+    { label: 'Mini (0.8L)', price: 49 }
   ],
   colors: ['#1e293b', '#f9fafb'],
   images: ['🥪', '🍱', '🧊', '🔥', '📐', '🎒', '🏔️', '🧰']
@@ -32,7 +32,7 @@ const FAQS = [
   { q: 'Can I put soup or curry inside?', a: 'Yes, thicker soups and curries work well. Very thin/watery soups may be prone to leaking if the box is tilted. We recommend using a small thermos for fully liquid soups.' },
   { q: 'What materials is it made from?', a: 'Food-grade stainless steel inner compartments, BPA-free food-grade plastic outer shell, silicone gaskets. All materials are food-safe and comply with NZ food contact standards.' },
   { q: 'How do I clean it?', a: 'Compartments and lid are dishwasher safe (top rack). The outer shell can be wiped clean with a damp cloth. Silicone gaskets can be removed for thorough cleaning.' },
-  { q: 'Shipping in New Zealand?', a: 'We ship nationwide. Standard shipping is free for orders over $39 NZD. Rural delivery adds $5. Typical delivery is 2–5 business days within NZ.' },
+  { q: 'Shipping in New Zealand?', a: 'We ship nationwide. Standard shipping is free for orders over $79 NZD. Rural delivery adds $5. Typical delivery is 2–5 business days within NZ.' },
   { q: 'Warranty & returns?', a: 'One-year warranty against manufacturing defects. 30-day satisfaction guarantee — if you\'re not happy, return it for a full refund. Terms apply.' },
   { q: 'Can I pack hot and cold food directly next to each other?', a: 'Absolutely. The insulation barriers between compartments are designed specifically for this. Hot one side, cold the other — that\'s the whole idea.' }
 ];
